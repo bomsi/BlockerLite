@@ -65,6 +65,8 @@ class BurpExtender(IBurpExtender, IExtensionStateListener, IProxyListener):
 		self._blacklist.add('https://blocklists.settings.services.mozilla.com')
 		self._blacklist.add('https://firefox.settings.services.mozilla.com')
 		self._blacklist.add('https://redirector.gvt1.com')
+		self._blacklist.add('https://push.services.mozilla.com')
+		self._blacklist.add('https://content-signature-2.cdn.mozilla.net')
 		
 		self._stdout.println('Extension was loaded')
 		self._stdout.println('Running under version ' + sys.version)
